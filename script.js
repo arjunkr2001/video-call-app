@@ -9,7 +9,7 @@ let cvr = document.getElementById("cover")
 let backBtn = document.getElementById('back')
 let localStream
 async function startLocalVideo(){
-    return navigator.mediaDevices.getUserMedia({video:true,audio:true})
+    return navigator.mediaDevices.getUserMedia({video:true,audio:false})
         .then(stream =>{
             localStream = stream
             localVdoElmnt.srcObject = stream
