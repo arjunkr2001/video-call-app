@@ -68,3 +68,7 @@ backBtn.addEventListener('click',()=>{
     remoteVdoElmnt.style.height = 'auto'
     document.body.style.backgroundColor = 'black'
 })
+
+document.getElementById('copy').addEventListener('click',()=>{
+    navigator.clipboard.writeText(localPeerIdP.innerText)
+})
